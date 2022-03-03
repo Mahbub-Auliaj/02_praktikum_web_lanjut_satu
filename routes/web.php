@@ -13,18 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticleController;
 
-Route::get('/', function () {
-    return 'Selamat Datang';
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/about', function () {
-    return 'NIM 2041720145 nama Mahbub Auliaur Rahman';
-});
+Auth::routes();
 
-Route::get('/articles/{id}', function ($id) {
-    return 'Ini adalah artikel ke-' .$id;
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
