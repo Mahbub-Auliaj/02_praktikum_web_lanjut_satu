@@ -22,7 +22,11 @@
     <div class="cl">&nbsp;</div>
     <!-- Content -->
     <div id="content">
-      @include('layouts.content')
+      <!-- Products -->
+      <div class="products">
+        <h1>Ini Adalah Halaman About</h1>
+      </div>
+      <!-- End Products -->
     </div>
     <!-- End Content -->
     <!-- Sidebar -->

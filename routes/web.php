@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', [HomeController::class, 'index']);
-
+Route::get('/about', [AboutController::class, 'about']);
+Route::get('/product', [ProductController::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

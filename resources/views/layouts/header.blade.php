@@ -7,11 +7,11 @@
     <!-- Navigation -->
     <div id="navigation">
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Support</a></li>
+        <li><a href="http://127.0.0.1:8000/#" class="active">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/#">Support</a></li>
         <li><a href="#">My Account</a></li>
-        <li><a href="#">The Store</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="http://127.0.0.1:8000/product">Product</a></li>
+        <li><a href="http://127.0.0.1:8000/about">About</a></li>
       </ul>
     </div>
     <!-- End Navigation -->

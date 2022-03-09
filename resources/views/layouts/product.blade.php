@@ -22,7 +22,39 @@
     <div class="cl">&nbsp;</div>
     <!-- Content -->
     <div id="content">
-      @include('layouts.content')
+      <!-- Products -->
+      <div class="products">
+        <div class="card" style="margin-bottom: 30px">
+  			<div class="card-header text-white bg-secondary">
+    		<h2>Data Produk</h2>
+  			</div>
+  			<div class="card-body">
+    			<table  id="customers">
+    				<thead>
+    					<tr>
+    						<th scope="col">Id</th>
+    						<th scope="col">Name</th>
+    						<th scope="col">Category</th>
+    						<th scope="col">Price</th>
+    						<th scope="col">Action</th>
+    					</tr>
+    					<tbody>	
+                            @foreach($page as $p)				
+    					    <tr>
+    							<td>{{ $p -> id }}</td>
+                                <td>{{ $p -> name }}</td>
+                                <td>{{ $p -> category }}</td>
+                                <td>{{ $p -> price }}</td>
+                                <td></td>	
+    						</tr>
+                            @endforeach
+    					</tbody>
+    				</thead>
+    			</table>
+  			</div>
+		</div>
+      </div>
+      <!-- End Products -->
     </div>
     <!-- End Content -->
     <!-- Sidebar -->
